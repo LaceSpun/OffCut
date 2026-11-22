@@ -2,7 +2,7 @@
 
 Icons, artwork, and beautiful detours. A free, local-first, iPad-oriented creative editor. This first implementation concentrates on one workflow: create or import an icon, edit its layers and materials, save it, reopen it, and export a PNG.
 
-**Status: implementation prepared, not release-verified.** Production compilation and 17 automated tests pass. Interactive browser QA is blocked by the current preview gateway. Real iPad / Safari / Pencil behavior and offline installation have not yet been verified. Source is hosted in [LaceSpun/OffCut](https://github.com/LaceSpun/OffCut). The app has not been deployed.
+**Status: implementation prepared, not release-verified.** Production compilation and 17 automated tests pass. Interactive browser QA is blocked by the current preview gateway. Real iPad / Safari / Pencil behavior and offline installation have not yet been verified. Source is hosted in [LaceSpun/OffCut](https://github.com/LaceSpun/OffCut). The repository includes compiled files for branch-based GitHub Pages; real iPad verification remains pending.
 
 ## Run
 
@@ -16,7 +16,7 @@ npm run build
 npm run preview
 ```
 
-For GitHub Pages, publish **dist/client**, not the root dist folder. The app uses relative asset URLs and a relative PWA scope. A manually dispatched Pages workflow is included; it does not automatically deploy on push. Enable Pages with GitHub Actions before running it.
+GitHub Pages can publish `main` → `/ (root)` directly: compiled HTML, JavaScript, CSS and assets are checked in at the repository root. Source HTML lives in `editor/index.html`; app source remains in `src/`. After source edits, run `npm run build:pages` and commit the refreshed output. The app uses relative asset URLs and PWA scope, including under `/OffCut/`. Alternatively, the manually dispatched Actions workflow publishes `dist/client` when Pages is configured for GitHub Actions.
 
 ## First workflow
 

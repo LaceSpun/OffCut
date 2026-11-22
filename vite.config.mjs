@@ -3,8 +3,11 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  root: "editor",
+  publicDir: "../public",
   build: {
-    outDir: "dist/client",
+    outDir: "../dist/client",
+    emptyOutDir: true,
   },
   optimizeDeps: {
     include: ["react", "react-dom/client"],

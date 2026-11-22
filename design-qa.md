@@ -41,3 +41,7 @@ No browser screenshot could be captured. No visual P0/P1/P2 finding has been mar
 ## Next action
 
 Use a permitted hosted test URL or restore local preview access. Test the complete create/import → edit → effects → save → reload/reopen → PNG workflow, confirm both themes and exact asset swaps, capture matching tablet views, compare them with the source and fix substantive issues before release.
+
+## GitHub Pages repair
+
+Observed the live Pages HTML serving `/src/main.jsx` from the repository root. The branch publisher does not run Vite, leaving the page without runnable application JavaScript. Source HTML now lives in `editor/`; `npm run build:pages` emits compiled files at the repository root for the existing main/root publishing configuration. Production build and all 17 automated tests pass after the change. Live verification is pending deployment.
