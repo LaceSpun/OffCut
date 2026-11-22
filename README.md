@@ -2,7 +2,7 @@
 
 Icons, artwork, and beautiful detours. A free, local-first, iPad-oriented creative editor. This first implementation concentrates on one workflow: create or import an icon, edit its layers and materials, save it, reopen it, and export a PNG.
 
-**Status: implementation prepared, not release-verified.** Production compilation and 17 automated tests pass. Interactive browser QA is blocked by the current preview gateway. Real iPad / Safari / Pencil behavior and offline installation have not yet been verified. Source is hosted in [LaceSpun/OffCut](https://github.com/LaceSpun/OffCut). The repository includes compiled files for branch-based GitHub Pages; real iPad verification remains pending.
+**Status: implementation prepared, not release-verified.** Production compilation and 17 automated tests pass. The deployed editor now renders in desktop Chrome; full interaction and device QA remain pending. Real iPad / Safari / Pencil behavior and offline installation have not yet been verified. Source is hosted in [LaceSpun/OffCut](https://github.com/LaceSpun/OffCut). The repository includes compiled files for branch-based GitHub Pages; real iPad verification remains pending.
 
 ## Run
 
